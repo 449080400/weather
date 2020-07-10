@@ -37,7 +37,6 @@ class Weather
         if (!\in_array(\strtolower($type), ['base', 'all'])) {
             throw new InvalidArgumentException('Invalid type value(base/all): ' . $type);
         }
-
         
         $query = array_filter([
             'key'        => $this->key,
