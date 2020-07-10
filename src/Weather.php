@@ -38,6 +38,7 @@ class Weather
             throw new InvalidArgumentException('Invalid type value(base/all): ' . $type);
         }
 
+        
         $query = array_filter([
             'key'        => $this->key,
             'city'       => $city,
