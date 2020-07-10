@@ -1,0 +1,22 @@
+{
+    "name": "jxt\/weather",
+    "description": "A weather SDK",
+    "license": "MIT",
+    "require": {
+        "guzzlehttp/guzzle": "^7.0",
+        "phpunit/phpunit": "^9.2",
+        "mockery/mockery": "^1.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jxt\\Weather\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Jxt\\Weather\\ServiceProvider"
+            ]
+        }
+    }
+}
